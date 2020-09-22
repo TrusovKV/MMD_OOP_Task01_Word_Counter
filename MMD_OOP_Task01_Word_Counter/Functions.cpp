@@ -6,7 +6,7 @@ Read_from_file file_reader(vector <string> v, bool flag)
 	Read_from_file output;
 		string s;
 		
-ifstream Input_file ("d:\\visual studio 2012\\Projects\\ConsoleApplication1\\ConsoleApplication1\\Input.txt");
+ifstream Input_file ("d:\\GitHub\\MMDep_OOP_Autumn_2020\\MMD_OOP_Task01_Word_Counter\\MMD_OOP_Task01_Word_Counter\\Input.txt");
 	if (Input_file.is_open())
 	{
 		while (Input_file.eof()!=true)
@@ -29,5 +29,25 @@ ifstream Input_file ("d:\\visual studio 2012\\Projects\\ConsoleApplication1\\Con
 
 bool sort_function(Output_class a,Output_class b)
 {
-	return a.get_freq()<b.get_freq();
+	return a.get_freq()>b.get_freq();
+}
+
+void file_writer( vector <Output_class>::iterator o, vector <Output_class>::iterator o_end)
+{
+	ofstream Output_file("d:\\GitHub\\MMDep_OOP_Autumn_2020\\MMD_OOP_Task01_Word_Counter\\MMD_OOP_Task01_Word_Counter\\Output.txt");
+	if (Output_file.is_open())
+	{
+		while (o!=o_end)
+		{
+			Output_file<<o->get_word()<<","<<o->get_freq()<<","<<o->get_freqProc()<<endl;
+			o++;
+		}
+	}
+	else
+	{
+		cout<< "File not oppened" <<endl;
+	}
+	
+	Output_file.close();
+
 }

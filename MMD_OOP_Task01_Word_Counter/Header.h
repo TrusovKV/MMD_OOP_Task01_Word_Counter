@@ -72,3 +72,5 @@ public:
 Read_from_file file_reader(vector <string> v, bool flag);
 
 bool sort_function(Output_class a,Output_class b);
+
+void file_writer( vector <Output_class>::iterator o, vector <Output_class>::iterator o_end);

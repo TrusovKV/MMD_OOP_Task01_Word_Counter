@@ -36,7 +36,6 @@ int main()
 			//кладём слова в аутпут
 			sizeOftext = Input.size(); // Чтоб по 100...000 раз не вызывать метод size()
 
-			cout<<counter<<" "<<sizeOftext<<endl;
 			for (LSp=Leter_Stack.begin();LSp!=Leter_Stack.end();LSp++)
 				{
 					Out.set_word(LSp->first);
@@ -47,10 +46,12 @@ int main()
 
 			sort(Output.begin(),Output.end(),sort_function); // sortig
 			// выводим на экран
-			for(Outp = Output.begin() ; Outp < Output.end()-1; Outp++) 
+			/*for(Outp = Output.begin() ; Outp < Output.end()-1; Outp++) 
 				{
 					cout<<Outp->get_word()<<" "<<Outp->get_freq()<<" "<<Outp->get_freqProc()<<endl;
 				}
+			*/
+			file_writer(Output.begin(),Output.end());
 
 		return 0;
 		}
