@@ -1,0 +1,22 @@
+﻿Сборка начата 22.09.2020 18:51:22.
+     1>Проект "D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\MMD_OOP_Task01_Word_Counter\MMD_OOP_Task01_Word_Counter.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MMD_OOP_Task01_Word_Counter.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Classes.cpp Functions.cpp MMD_OOP_Task01_Word_Counter.cpp
+         MMD_OOP_Task01_Word_Counter.cpp
+     1>d:\github\mmdep_oop_autumn_2020\mmd_oop_task01_word_counter\mmd_oop_task01_word_counter\mmd_oop_task01_word_counter.cpp(43): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>d:\github\mmdep_oop_autumn_2020\mmd_oop_task01_word_counter\mmd_oop_task01_word_counter\mmd_oop_task01_word_counter.cpp(44): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+         Создание кода...
+         Пропуск... (изменения не обнаружены)
+         Functions.cpp
+         Classes.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\Debug\MMD_OOP_Task01_Word_Counter.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\Debug\MMD_OOP_Task01_Word_Counter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\Debug\MMD_OOP_Task01_Word_Counter.lib" /MACHINE:X86 Debug\Classes.obj
+         Debug\Functions.obj
+         Debug\MMD_OOP_Task01_Word_Counter.obj
+         Debug\stdafx.obj
+         MMD_OOP_Task01_Word_Counter.vcxproj -> D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\Debug\MMD_OOP_Task01_Word_Counter.exe
+     1>Построение проекта "D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\MMD_OOP_Task01_Word_Counter\MMD_OOP_Task01_Word_Counter.vcxproj" завершено (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:05.01
