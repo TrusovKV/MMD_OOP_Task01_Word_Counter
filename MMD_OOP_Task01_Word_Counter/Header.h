@@ -23,7 +23,7 @@ class Output_class
 {
 private:
 	string word;
-	int freq;
+	double freq;
 	double freqProc;
 public:
 	Output_class()
@@ -41,13 +41,13 @@ public:
 	{
 		word = w;
 	};
-	void set_freq (int f)
+	void set_freq (double f)
 	{
 		freq = f;
 	};
-	void set_freqProc(int sizeOftext)
+	void set_freqProc(double sizeOftext)
 	{
-		freqProc = (double)freq/(double)sizeOftext;
+		freqProc = freq/sizeOftext;
 	};
 
 	string get_word ()
@@ -71,4 +71,4 @@ public:
 
 Read_from_file file_reader(vector <string> v, bool flag);
 
-bool sort_function(double a,double b);
+bool sort_function(Output_class a,Output_class b);

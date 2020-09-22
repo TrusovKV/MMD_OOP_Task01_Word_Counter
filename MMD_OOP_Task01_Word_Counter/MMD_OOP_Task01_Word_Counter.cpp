@@ -7,7 +7,7 @@
 int main()
 {
 	int Text_size = 0;
-	int counter =  0;
+	double counter =  0;
 	bool IS_file_OPEN = true;
 	Output_class Out;
 	string test_word = "bear";
@@ -44,19 +44,14 @@ int main()
 					Out.set_freqProc(sizeOftext);
 					Output.push_back(Out);
 				}
+
+			sort(Output.begin(),Output.end(),sort_function); // sortig
 			// выводим на экран
 			for(Outp = Output.begin() ; Outp < Output.end()-1; Outp++) 
 				{
 					cout<<Outp->get_word()<<" "<<Outp->get_freq()<<" "<<Outp->get_freqProc()<<endl;
 				}
-	/*
-			for (LSp=Leter_Stack.begin();LSp!=Leter_Stack.end();LSp++)
-				{
-				O.word = LSp->first;
-				O.freq = LSp->second.size();
-				O.freq_proc = ((double) (O.freq))/Text_size;
-				Output.push_back(O);
-				}	*/
+
 		return 0;
 		}
 

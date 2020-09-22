@@ -27,8 +27,7 @@ ifstream Input_file ("d:\\visual studio 2012\\Projects\\ConsoleApplication1\\Con
 	return output;
 }
 
-bool sort_function(double a,double b)
+bool sort_function(Output_class a,Output_class b)
 {
-	cout<<a<<" "<<b<<endl;
-	return a<b;
+	return a.get_freq()<b.get_freq();
 }
