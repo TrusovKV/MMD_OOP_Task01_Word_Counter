@@ -25,13 +25,14 @@ int main()
 	IS_file_OPEN = file_reader( Input, IS_file_OPEN).flag;
 
 		if ( IS_file_OPEN == true)
-		{	
-			cout << "OK =D"<<endl;
+		{
+		cout << "OK =D"<<endl;
 			for(p = Input.begin() ; p < Input.end()-1; p++) // vector insertion into map
 				{
 					Leter_Stack.insert(make_pair(test_word,counter)); // Important!!
 					test_word = *p;
 					Leter_Stack[test_word]++;
+					cout<<test_word<<endl;
 				}
 			//кладём слова в аутпут
 			sizeOftext = Input.size(); // Чтоб по 100...000 раз не вызывать метод size()

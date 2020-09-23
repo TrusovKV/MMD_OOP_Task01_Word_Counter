@@ -3,26 +3,29 @@
 
 Read_from_file file_reader(vector <string> v, bool flag)
 {
-	Read_from_file output;
+		Read_from_file output;
 		string s;
-		
+		regex signs("[!?/.,]");
+		//stringstream result;
+		string result;
+
 ifstream Input_file ("d:\\GitHub\\MMDep_OOP_Autumn_2020\\MMD_OOP_Task01_Word_Counter\\MMD_OOP_Task01_Word_Counter\\Input.txt");
 	if (Input_file.is_open())
 	{
 		while (Input_file.eof()!=true)
 		{
-			Input_file>>s;// regex
-			output.v.push_back(s);
-			
+			Input_file>>s;	
+			if(regex_replace(s,signs,"").length()>0)
+			{
+			output.v.push_back(regex_replace(s,signs,""));	
+			}
 		}
 		output.flag = true;
 	}
 	else
 	{
-
 		output.flag = false;
-	}
-	
+	}	
 	Input_file.close();
 	return output;
 }
