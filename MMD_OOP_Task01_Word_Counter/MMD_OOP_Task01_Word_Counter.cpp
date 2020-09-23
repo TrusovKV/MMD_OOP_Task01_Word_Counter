@@ -23,6 +23,7 @@ int main()
 	map<string, double >::iterator LSp;	
 
 	Input = file_reader(Input);
+
 			cout <<"Started map generation"<<endl;
 			for(p = Input.begin() ; p < Input.end()-1; p++) // vector insertion into map
 				{
@@ -33,7 +34,7 @@ int main()
 				//	i++;
 				//	cout<<i<<endl;
 				}
-		cout << "Map generation done"<<endl<<endl;
+			cout << "Map generation done"<<endl<<endl;
 			//кладём слова в аутпут
 			sizeOftext = Input.size(); // Чтоб по 100...000 раз не вызывать метод size()
 
