@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "Header.h"
 
-Read_from_file file_reader(vector <string> v, bool flag)
+vector <string> file_reader(vector <string> output)
 {
-		Read_from_file output;
+		//vector <string> output;
 		string s;
 		regex signs("[!?/.,]");
 		int ii = 0;
@@ -11,24 +11,25 @@ Read_from_file file_reader(vector <string> v, bool flag)
 
 ifstream Input_file ("d:\\GitHub\\MMDep_OOP_Autumn_2020\\MMD_OOP_Task01_Word_Counter\\MMD_OOP_Task01_Word_Counter\\The-Hobbit.txt");
 	if (Input_file.is_open())
-	{			cout<<"init"<<endl;
+	{
+		cout<<"File oppened succesfully"<<endl<<"File reading started"<<endl;
 		while (Input_file.eof()!=true)
 		{
 
 			Input_file>>s;	
 			if(regex_replace(s,signs,"").length()>0)
 			{
-			output.v.push_back(regex_replace(s,signs,""));
-			ii++;
-			cout<<ii<<endl;
+			output.push_back(regex_replace(s,signs,""));
+			//ii++;
+			//cout<<ii<<endl;
 			}
 
 		}
-		output.flag = true;
+		cout<<"File reading done"<<endl
 	}
 	else
 	{
-		output.flag = false;
+	cout<<"File not oppened"<<endl;
 	}	
 	Input_file.close();
 	return output;

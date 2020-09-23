@@ -11,15 +11,6 @@
 
 using namespace std;
 
-
-
-struct Read_from_file
-{
-	vector <string> v;
-	bool flag;
-	int Text_size;
-};
-
 class Output_class
 {
 private:
@@ -70,7 +61,7 @@ public:
 
 
 
-Read_from_file file_reader(vector <string> v, bool flag);
+vector <string> file_reader(vector <string> v);
 
 bool sort_function(Output_class a,Output_class b);
 
