@@ -1,4 +1,4 @@
-﻿Сборка начата 23.09.2020 16:23:51.
+﻿Сборка начата 23.09.2020 16:59:20.
      1>Проект "D:\GitHub\MMDep_OOP_Autumn_2020\MMD_OOP_Task01_Word_Counter\MMD_OOP_Task01_Word_Counter\MMD_OOP_Task01_Word_Counter.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MMD_OOP_Task01_Word_Counter.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Functions.cpp
@@ -13,4 +13,4 @@
 
 Сборка успешно завершена.
 
-Затраченное время: 00:00:09.22
+Затраченное время: 00:00:09.05

@@ -6,19 +6,23 @@ Read_from_file file_reader(vector <string> v, bool flag)
 		Read_from_file output;
 		string s;
 		regex signs("[!?/.,]");
-		//stringstream result;
+		int ii = 0;
 		string result;
 
-ifstream Input_file ("d:\\GitHub\\MMDep_OOP_Autumn_2020\\MMD_OOP_Task01_Word_Counter\\MMD_OOP_Task01_Word_Counter\\Input.txt");
+ifstream Input_file ("d:\\GitHub\\MMDep_OOP_Autumn_2020\\MMD_OOP_Task01_Word_Counter\\MMD_OOP_Task01_Word_Counter\\The-Hobbit.txt");
 	if (Input_file.is_open())
-	{
+	{			cout<<"init"<<endl;
 		while (Input_file.eof()!=true)
 		{
+
 			Input_file>>s;	
 			if(regex_replace(s,signs,"").length()>0)
 			{
-			output.v.push_back(regex_replace(s,signs,""));	
+			output.v.push_back(regex_replace(s,signs,""));
+			ii++;
+			cout<<ii<<endl;
 			}
+
 		}
 		output.flag = true;
 	}

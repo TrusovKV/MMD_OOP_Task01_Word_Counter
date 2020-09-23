@@ -32,7 +32,7 @@ int main()
 					Leter_Stack.insert(make_pair(test_word,counter)); // Important!!
 					test_word = *p;
 					Leter_Stack[test_word]++;
-					cout<<test_word<<endl;
+					//cout<<test_word<<endl;
 				}
 			//кладём слова в аутпут
 			sizeOftext = Input.size(); // Чтоб по 100...000 раз не вызывать метод size()
