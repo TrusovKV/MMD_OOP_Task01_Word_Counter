@@ -61,7 +61,7 @@ public:
 
 
 
-vector <string> file_reader(vector <string> v);
+vector <string> file_reader(vector <string> output);
 
 bool sort_function(Output_class a,Output_class b);
 

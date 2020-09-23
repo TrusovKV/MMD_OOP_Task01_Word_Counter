@@ -51,8 +51,8 @@ int main()
 			cout << "Started sorting"<<endl;
 			sort(Output.begin(),Output.end(),sort_function); // sortig
 			cout << "Sorting done"<<endl<<endl;
-			// выводим на экран
-		/*	for(Outp = Output.begin() ; Outp < Output.end()-1; Outp++) 
+		/*	// выводим на экран
+			for(Outp = Output.begin() ; Outp < Output.end()-1; Outp++) 
 				{
 					cout<<Outp->get_word()<<" "<<Outp->get_freq()<<" "<<Outp->get_freqProc()<<endl;
 				}*/
