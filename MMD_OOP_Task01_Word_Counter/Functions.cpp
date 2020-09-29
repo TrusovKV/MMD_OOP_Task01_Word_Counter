@@ -19,13 +19,10 @@ ifstream Input_file (Path);
 		cout<<"File oppened succesfully"<<endl<<"File reading started"<<endl;
 		while (Input_file.eof()!=true)
 		{
-
 			Input_file>>s;	
 			if(regex_replace(s,signs,"").length()>0)
 			{
 			output.push_back(regex_replace(s,signs,""));
-			//ii++;
-			//cout<<ii<<endl;
 			}
 
 		}
