@@ -34,13 +34,16 @@ _CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_DEBUG );
 	vector<Output_class>::iterator Outp;
 
 	
-
+	cout << "Hello world" << endl;
 	Input_class input;
+	int i = 0;
 	while(input.getEof()!=true)
 	{
+		cout << "Ineration#" << i << endl;
 	Input = input.readFilePart();
 	Text_size += input.getSize();
 	Leter_Stack = input.putInMap();
+	i++;
 	}
 				for (LSp=Leter_Stack.begin();LSp!=Leter_Stack.end();LSp++)
 				{
